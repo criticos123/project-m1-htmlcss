@@ -1,1 +1,382 @@
-/* CSS here :) */
+body{
+    margin:0;
+    font-family: Poppins, sans-serif;
+}
+
+.nav {
+    background-color: #3a3633;
+    color:  #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.logo{
+    flex:2;
+    width: 25px;
+    height: 25px;
+
+}
+.nav-right{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex:1;
+}
+.nav-right > a {
+    color: #fff;
+    margin: 0 40px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+    font-size: small;
+    
+}
+
+.nav-right > a:hover {
+    opacity: 0.5;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+    
+}
+.nav>a:hover{
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+
+    .feat,.adv,.gal,.prod{
+    display:none;
+    }
+    .nav-right>a:hover{
+    border-bottom: none;
+    padding-bottom: 1px;
+    }
+    
+
+}
+@media (min-width: 768px) {
+
+    .menu{display:none;
+    }
+}
+
+.part1{
+    background-image: url("/imgs/bg.jpg");
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.a1{
+    border: 5px solid #fff;
+    display: flex;
+    width:25%;
+    margin-top:250px;
+    height: 300px;
+    margin-left: auto;
+    border-right: none;
+    
+}
+.a1>.intro{
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.a2{
+    background: rgba(118, 128, 118, 0.6);
+    border: 5px solid #fff;
+    border-left: none;
+    display: flex;
+    margin-top:250px;
+    width: 40%;
+    margin-right: auto;
+    height: 300px;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.a3{
+    border-bottom: 1px dashed #fff ;
+}
+.a4{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: auto;
+
+}
+
+
+@media (max-width: 768px) {
+    .part1{
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .a1{
+        border: none;
+        width:100%;
+        margin-top: 200px;
+        height:100px;
+        padding-bottom: 10px;
+    }
+    .a2{
+        border: none;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+        margin-bottom: 150px;
+    }
+
+    .a3{
+        border:none;
+    }
+    .a4{
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+.intro,.we, .l1, .l2{
+    color: #fff;
+}
+
+.part2{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+
+.b1,.b2,.b3{
+    border: 1px solid lightblue;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-left:100px;
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:  #fff;
+    align-items: center;
+    
+}
+
+
+
+.b1> .lor,.b2> .lor ,.b3> .lor {
+    color: lightgray;
+    margin: 20px;
+    text-align: center;
+}
+
+.get,.sell,.do{
+    background-color:#3a3633 ;
+    color: white;
+    border-radius: 1px;
+    width:90%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .part2 {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .b1,.b2,.b3{
+        width:300px;
+        max-height: 500px;
+    }
+
+}
+    
+
+.part3{
+    margin-top: 70px;
+    background-color:#3a3633;
+    color: #fff; 
+    height:400px;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.part4{
+
+    background-image: linear-gradient(to right, rgba(28, 65, 112, 0), rgb(27, 94, 194));
+    color: #fff; 
+    display: block;
+    text-align: right;
+    height: 400px;
+    width:100%;
+
+}
+
+.part5{
+    border: 3px solid #fff;
+    max-width:200px;
+    position: absolute;
+    background-color:#3a3633 ;
+    color:#fff;
+    text-align: center;
+
+}
+.part5>h3{
+    text-align: center;
+    color: red;
+}
+
+.part5>p{
+    text-align: center;
+}
+
+.part5:hover{
+    transform-origin: left;
+    transform: translate(50%, 50%) rotate(90deg) 
+    
+}
+
+.part6 {
+    display:flex;
+    position: relative;
+    margin: 0;
+    height:300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+    
+}
+
+.part6>.tesla{
+    width: calc(100% /3);
+    height: 250px;
+    
+}
+
+@media(max-width:800px){
+
+    .part6{
+        display:flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .part6>.tesla{
+        width: 100%;
+    }
+}
+
+.tesla{
+    position: relative;
+}
+
+.appear {
+    opacity: 0;
+}
+.tesla:hover {
+    opacity: 0.3;
+}
+.tesla:hover .appear {
+    opacity: 1;
+}
+
+.letter{
+    background-color: grey;
+}
+
+.inputs{
+    margin-top: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.in1{
+    display: flex;
+    flex-direction: row;
+}
+label{
+    color: grey;
+}
+
+@media(max-width:768px){
+    .inputs{
+        margin-top: 1250px;
+    }
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #3a3633;
+    padding-bottom: 30px;
+    margin-left: 40px;
+    padding-left: 100px;
+    margin-right: 40px;
+    padding-right: 100px;
+}
+
+.foot1,.foot2,.foot3,.foot4{
+    display: flex;
+    flex-direction:column;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.foot1>a{
+    color:lightgrey;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.foot2>a{
+    color:lightgrey;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.foot3>a{
+    color:lightgrey;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.foot4>a{
+    color:lightgrey;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px){
+
+    .foot1{
+        width:100%;
+        text-align: center;
+    }
+
+    .foot2,.foot3,.foot4{
+        display: none;
+    }
